@@ -1,0 +1,15 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: challenge-cluster
+  region: us-east-1
+
+managedNodeGroups:
+  - name: ng-challenge-cluster
+    spot: true
+    instanceTypes:  ["m5.large","m5a.large"]
+    desiredCapacity: 2
+    volumeSize: 40
+    ssh:
+      publicKeyName: ronan-challenge
