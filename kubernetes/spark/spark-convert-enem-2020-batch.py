@@ -38,9 +38,6 @@ if __name__ == "__main__":
     )
     
 
-    df.show()
-    df.printSchema()
-
     (df
     .write
     .mode("overwrite")

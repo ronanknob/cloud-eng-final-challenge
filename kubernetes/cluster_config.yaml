@@ -8,8 +8,7 @@ metadata:
 managedNodeGroups:
   - name: ng-challenge-cluster
     spot: true
-    instanceTypes:  ["m5.large","m5a.large"]
-    desiredCapacity: 2
-    volumeSize: 40
+    instanceTypes:  ["m5.xlarge","m5a.xlarge"]
+    desiredCapacity: 3
     ssh:
       publicKeyName: ronan-challenge
